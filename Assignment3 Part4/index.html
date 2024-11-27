@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservation Request</title>
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <h1>Reservation Request</h1>
+  <form id="reservation-form">
+    <!-- General Information -->
+    <fieldset>
+      <legend>General Information</legend>
+      <label for="arrival-date">Arrival date:</label>
+      <input type="text" id="arrival-date" name="arrival-date" required />
+      <br />
+      <label for="nights">Nights:</label>
+      <input type="text" id="nights" name="nights" required />
+      <br />
+      <label for="adults">Adults:</label>
+      <select id="adults" name="adults" required>
+        <option value="1">1</option>
+        <option value="2" selected>2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+      <br />
+      <label for="children">Children:</label>
+      <select id="children" name="children">
+        <option value="0" selected>0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </fieldset>
+
+    <!-- Preferences -->
+    <fieldset>
+      <legend>Preferences</legend>
+      <label><input type="radio" name="room-type" value="Standard" /> Standard</label>
+      <label><input type="radio" name="room-type" value="Business" /> Business</label>
+      <label><input type="radio" name="room-type" value="Suite" /> Suite</label>
+      <br />
+      <label><input type="radio" name="bed-type" value="King" /> King</label>
+      <label><input type="radio" name="bed-type" value="Double Double" /> Double Double</label>
+      <br />
+      <label><input type="checkbox" name="smoking" /> Smoking</label>
+    </fieldset>
+
+    <!-- Contact Information -->
+    <fieldset>
+      <legend>Contact Information</legend>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+      <br />
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" required />
+      <br />
+      <label for="phone">Phone:</label>
+      <input type="text" id="phone" name="phone" required />
+    </fieldset>
+
+    <!-- Submit -->
+    <button type="submit">Submit Request</button>
+  </form>
+
+  <footer>
+    <p>© Radamir Kekukh/N01690880 2023</p>
+  </footer>
+</body>
+</html>
